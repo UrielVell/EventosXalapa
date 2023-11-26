@@ -23,13 +23,15 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navView: BottomNavigationView = binding.navView
         cargarLista()
     }
+
 
     private fun cargarLista(){
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerLista)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = EventosAdapter(EventosProvider.eventos)
     }
+
+
 }
