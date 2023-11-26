@@ -9,11 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 class CustomeAdapter: RecyclerView.Adapter<CustomeAdapter.ViewHolder>(){
 
-    val titles = arrayOf("primero", "segundo")
+    val titles = arrayOf("primero", "segundo","tercero")
 
-    val details = arrayOf("detalle1", "detalle2")
+    val details = arrayOf("detalle1", "detalle2","Uriel joto")
 
-    val images = intArrayOf(R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground)
+    val images = intArrayOf(R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground)
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
         val v = LayoutInflater.from(viewGroup.context).inflate(R.layout.card_layout, viewGroup, false)
