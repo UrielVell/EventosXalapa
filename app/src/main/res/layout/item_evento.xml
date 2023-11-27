@@ -15,7 +15,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" android:layout_width="match_parent">
 
         <ImageButton
             android:id="@+id/btnGuardar"
@@ -28,7 +28,7 @@
 
         <ImageView
             android:id="@+id/imgEvento"
-            android:layout_width="wrap_content"
+            android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
@@ -47,14 +47,14 @@
             android:layout_marginBottom="8dp"
             android:text="TextView"
             android:textColor="@color/white"
-            android:textSize="24sp"
+            android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/descEvento"
             app:layout_constraintStart_toEndOf="@+id/imgEvento"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/descEvento"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="80dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
@@ -72,6 +72,18 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imgEvento" />
+
+        <TextView
+            android:id="@+id/txtPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="#19FD00"
+            app:layout_constraintBottom_toBottomOf="@+id/descEvento"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/descEvento" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

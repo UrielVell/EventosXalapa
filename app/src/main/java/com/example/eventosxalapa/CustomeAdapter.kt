@@ -6,41 +6,35 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.eventosxalapa.Models.EventosProvider
 
 class CustomeAdapter: RecyclerView.Adapter<CustomeAdapter.ViewHolder>(){
 
-    val titles = arrayOf("primero", "segundo","tercero")
-
-    val details = arrayOf("detalle1", "detalle2","Uriel joto")
-
-    val images = intArrayOf(R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground,R.drawable.ic_launcher_foreground)
-
+    val titulos = listOf<String>("adasd")
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
-        val v = LayoutInflater.from(viewGroup.context).inflate(R.layout.card_layout, viewGroup, false)
+        val v = LayoutInflater.from(viewGroup.context).inflate(R.layout.item_evento, viewGroup, false)
         return ViewHolder(v)
         }
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
-        viewHolder.itemTitle.text = titles[i]
-        viewHolder.itemDetails.text = details[i]
-        viewHolder.itemImage.setImageResource(images[i])
+
     }
 
     override fun getItemCount(): Int {
-       return titles.size
+       return titulos.size
     }
 
         inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
-            var itemImage: ImageView
-            var itemTitle: TextView
-            var itemDetails: TextView
+            var nombreEvento : TextView
+            var descEvento : TextView
+            var imgEvento : ImageView
+            var precio : TextView
 
             init{
-                itemImage = itemView.findViewById(R.id.item_imagen)
-                itemTitle=itemView.findViewById(R.id.tv_titulo)
-                itemDetails=itemView.findViewById(R.id.tv_titulo2)
-
-
+                nombreEvento = itemView.findViewById(R.id.nomEvento)
+                descEvento = itemView.findViewById(R.id.descEvento)
+                imgEvento = itemView.findViewById(R.id.imgEvento)
+                precio = itemView.findViewById(R.id.txtPrecio)
             }
         }
 }
