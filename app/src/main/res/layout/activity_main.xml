@@ -21,19 +21,6 @@
         android:layout_height="50dp"
         android:orientation="horizontal">
 
-
-<<<<<<< HEAD
-=======
-        <ImageButton
-            android:id="@+id/btnMenu"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="10px"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:contentDescription="btnHAm"
-            android:src="@drawable/baseline_menu_24" />
-
->>>>>>> 081e35e195540e7c61178e94261d5862f3f2b1e4
         <EditText
             android:id="@+id/editTextText"
             android:layout_width="wrap_content"

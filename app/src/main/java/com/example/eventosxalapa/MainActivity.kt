@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val btnHoy = binding.btnHoy
         val btnSemana = binding.btnSemana
         val btnMes = binding.btnMes
-<<<<<<< HEAD
+
         val btnGratis = binding.button
         var btnPaga = binding.button2
 
@@ -47,11 +47,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
-=======
-        val btnMenu = binding.btnMenu
->>>>>>> 081e35e195540e7c61178e94261d5862f3f2b1e4
-
         btnHoy.setOnClickListener {
             cargarLista()
         }
@@ -64,17 +59,10 @@ class MainActivity : AppCompatActivity() {
             cargarListaMes()
         }
 
-<<<<<<< HEAD
+
         btnGratis.setOnClickListener{
             cargarListaGratis()
         }
-=======
-        btnMenu.setOnClickListener {
-            intent =  Intent(this, RegistroOrgActivity::class.java)
-            startActivity(intent)
-        }
-
->>>>>>> 081e35e195540e7c61178e94261d5862f3f2b1e4
 
         btnPaga.setOnClickListener{
             cargarListaPaga()
