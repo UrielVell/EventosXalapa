@@ -15,7 +15,7 @@
 
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/btnMenu"
             style="?android:attr/borderlessButtonStyle"
             android:layout_width="10px"
             android:layout_height="wrap_content"

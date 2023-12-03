@@ -1,5 +1,6 @@
 package com.example.eventosxalapa
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         val btnHoy = binding.btnHoy
         val btnSemana = binding.btnSemana
         val btnMes = binding.btnMes
+        val btnMenu = binding.btnMenu
 
         btnHoy.setOnClickListener {
             cargarLista()
@@ -30,6 +32,11 @@ class MainActivity : AppCompatActivity() {
 
         btnMes.setOnClickListener {
             cargarListaMes()
+        }
+
+        btnMenu.setOnClickListener {
+            intent =  Intent(this, RegistroOrgActivity::class.java)
+            startActivity(intent)
         }
 
 
