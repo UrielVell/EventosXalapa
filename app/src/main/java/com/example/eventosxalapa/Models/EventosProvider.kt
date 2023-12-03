@@ -34,7 +34,7 @@ class EventosProvider {
                 "06/11/2023",
                 "Recorrido por todo el cerro de macuilteptl",
                 "Admiistracion del Cerro de Macuilteptl",
-                "https://fastly.picsum.photos/id/786/130/130",
+                "https://picsum.photos/id/190/130/130",
                 "$30")
         )
 
@@ -55,13 +55,13 @@ class EventosProvider {
                 "06/11/2023",
                 "Recorrido por todo el cerro de macuilteptl",
                 "Admiistracion del Cerro de Macuilteptl",
-                "https://fastly.picsum.photos/id/786/130/130",
+                "https://picsum.photos/id/190/130/130",
                 "$30"),
             Evento("Aniversario del Ayuntamiento de Xalapa",
                 "23/11/2023",
                 "celebracion del aniversario del ayuntamiento de xalapa",
                 "Ayuntamiento",
-                "https://fastly.picsum.photos/id/828/130/130",
+                "https://picsum.photos/id/192/130/130",
                 "Gratis")
         )
     }

@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity() {
         val recyclerView = binding.recyclerView
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = EventoAdapter(EventosProvider.listaHoy)
+
     }
 
 
