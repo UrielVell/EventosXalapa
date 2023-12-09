@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_marginTop="100dp"
     android:layout_marginStart="16dp"
-
+    android:id="@+id/nav_heder"
     android:background="@color/white">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -18,12 +18,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/tv_texto"
         android:textSize="20dp"
-        android:text="Si eres organizador de eventos puedes registrarte con el botón registrate"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tb_registrarse"
-        android:text="Registrate"/>
+        android:text="Si eres organizador de eventos puedes registrarte en la opción registrar"/>
     <View
         android:layout_width="match_parent"
         android:layout_height="16dp"

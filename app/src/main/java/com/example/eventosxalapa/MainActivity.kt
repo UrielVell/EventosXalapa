@@ -41,8 +41,14 @@ class MainActivity : AppCompatActivity() {
 
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.nav_home -> Toast.makeText(this@MainActivity,"Accion",Toast.LENGTH_LONG).show()
+                R.id.nav_buscar -> Toast.makeText(this@MainActivity,"Accion",Toast.LENGTH_LONG).show()
             }
+            when(it.itemId){
+                R.id.nav_Regitrar -> {
+                    val intent = Intent(this@MainActivity, RegistroOrgActivity::class.java)
+                    startActivity(intent)}
+            }
+
             true
         }
 
