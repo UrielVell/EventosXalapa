@@ -6,9 +6,11 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.eventosxalapa.Models.EventosProvider
+import com.example.eventosxalapa.Models.Promotor
 import com.example.eventosxalapa.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 
@@ -51,6 +53,8 @@ class MainActivity : AppCompatActivity() {
 
             true
         }
+
+
 
 
         btnHoy.setOnClickListener {
