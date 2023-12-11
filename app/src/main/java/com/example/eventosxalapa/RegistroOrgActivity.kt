@@ -29,7 +29,7 @@ class RegistroOrgActivity : AppCompatActivity() {
 
             if (validarCampos(organizacion,email,contrasena)){
                 promotor = inicializarPromotor(organizacion,email,contrasena)
-                Toast.makeText(this@RegistroOrgActivity,"Ahora puedes agendar Eventos",Toast.LENGTH_LONG).show()
+                Toast.makeText(this@RegistroOrgActivity,"Bienvenido "+organizacion+ ": Ahora puedes agendar Eventos",Toast.LENGTH_LONG).show()
                 val intent = Intent(this@RegistroOrgActivity, MainActivity2::class.java)
                 startActivity(intent)
             }else{
@@ -42,8 +42,7 @@ class RegistroOrgActivity : AppCompatActivity() {
         }
 
         btnAtras.setOnClickListener{
-
-            Toast.makeText(this@RegistroOrgActivity,"Uriel gay",Toast.LENGTH_LONG).show()
+            finish()
         }
 
 

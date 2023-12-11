@@ -40,12 +40,18 @@ class MainActivity2 : AppCompatActivity() {
 
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.nav_buscar -> Toast.makeText(this@MainActivity2,"Accion", Toast.LENGTH_LONG).show()
+                R.id.nav_buscar -> binding.editTextText.requestFocus()
             }
             when(it.itemId){
                 R.id.nav_Regitrar -> {
                     val intent = Intent(this@MainActivity2, RegistroOrgActivity::class.java)
                     startActivity(intent)}
+            }
+            when(it.itemId){
+                R.id.nav_agregar -> Toast.makeText(this@MainActivity2, "Accion de agregar evento", Toast.LENGTH_SHORT).show()
+            }
+            when(it.itemId){
+                R.id.nav_cerrar -> Toast.makeText(this@MainActivity2, "Accion de cerrar sesion", Toast.LENGTH_SHORT).show()
             }
 
             true

@@ -9,15 +9,23 @@
     android:id="@+id/nav_heder"
     android:background="@color/componentes">
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:src="@drawable/baseline_person_24" />
+        android:src="@drawable/eventos_hoy_xalapa" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tv_texto"
-        android:textSize="20dp"
-        android:text="Si eres organizador de eventos puedes registrarte en la opción registrar"/>
+        android:textSize="15dp"
+        android:text="Si eres organizador de eventos puedes registrarte en la opción registrar. "/>
+
+    <TextView
+        android:id="@+id/texto_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consejo: Utiliza los comandos de voz 'hoy', 'semana', 'mes', 'gratis' y 'paga' para filtrar las listas de eventos."
+        android:textColor="#3F51B5"
+        android:textSize="15dp" />
 
 </LinearLayout>

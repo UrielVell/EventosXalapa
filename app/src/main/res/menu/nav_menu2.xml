@@ -7,11 +7,11 @@
         android:icon="@drawable/baseline_search_24"
         android:title="Buscar"/>
 
-    <item android:id="@+id/nav_favorito"
+    <item android:id="@+id/nav_agregar"
         android:icon="@drawable/baseline_mode_edit_24"
         android:title="Agregar evento"/>
 
-    <item android:id="@+id/nav_agregar_evento"
+    <item android:id="@+id/nav_cerrar"
         android:icon="@drawable/baseline_exit_to_app"
         android:title="Cerrar seción"/>
 

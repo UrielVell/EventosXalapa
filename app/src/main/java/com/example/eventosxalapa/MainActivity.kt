@@ -60,13 +60,17 @@ class MainActivity : AppCompatActivity() {
 
         navView.setNavigationItemSelectedListener {
             when(it.itemId){
-                R.id.nav_buscar -> Toast.makeText(this@MainActivity,"Accion",Toast.LENGTH_LONG).show()
+                R.id.nav_buscar -> binding.editTextText.requestFocus()
             }
             when(it.itemId){
                 R.id.nav_Regitrar -> {
                     val intent = Intent(this@MainActivity, RegistroOrgActivity::class.java)
                     startActivity(intent)}
             }
+            when(it.itemId){
+                R.id.nav_favorito -> Toast.makeText(applicationContext, "Mostrar eventos guardados", Toast.LENGTH_SHORT).show()
+            }
+
 
             true
         }
