@@ -28,6 +28,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="Busqueda rapida"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:inputType="text" />
             <ImageButton
                 android:id="@+id/btnMicro"
@@ -51,6 +53,8 @@
                 android:layout_weight="1"
                 android:layout_marginStart="40dp"
                 android:text="Gratis"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:layout_marginRight="5dp"/>
 
             <Button
@@ -60,7 +64,9 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="40dp"
                 android:layout_marginRight="5dp"
-                android:text="De paga" />
+                android:text="De paga"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
 
         </LinearLayout>
 
@@ -93,7 +99,9 @@
                 android:layout_margin="5dp"
                 android:id="@+id/btn_hoy"
                 android:textSize="18dp"
-                android:text="HOY"/>
+                android:text="HOY"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_weight=".30"
@@ -101,7 +109,9 @@
                 android:layout_margin="5dp"
                 android:id="@+id/btn_semana"
                 android:textSize="18dp"
-                android:text="SEMANA"/>
+                android:text="SEMANA"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_weight=".30"
@@ -109,7 +119,9 @@
                 android:layout_height="60dp"
                 android:id="@+id/btn_mes"
                 android:textSize="18dp"
-                android:text="MES"/>
+                android:text="MES"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
 
 
         </LinearLayout>

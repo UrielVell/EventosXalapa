@@ -3,20 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <item android:id="@+id/nav_Regitrar"
-        android:title="Registrate aquí"
-        android:icon="@drawable/baseline_person_24"/>
-
     <item android:id="@+id/nav_buscar"
         android:icon="@drawable/baseline_search_24"
         android:title="Buscar"/>
 
     <item android:id="@+id/nav_favorito"
-        android:icon="@drawable/baseline_recommend_24"
-        android:title="Favoritos"/>
+        android:icon="@drawable/baseline_mode_edit_24"
+        android:title="Agregar evento"/>
 
     <item android:id="@+id/nav_agregar_evento"
-
-        android:title="Agregar evento"/>
+        android:icon="@drawable/baseline_exit_to_app"
+        android:title="Cerrar seción"/>
 
 </menu>

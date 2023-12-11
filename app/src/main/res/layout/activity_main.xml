@@ -28,7 +28,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Busqueda rapida"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textColor="@color/black"/>
 
         <ImageButton
             android:id="@+id/btnMicro"
@@ -52,6 +53,8 @@
             android:layout_weight="1"
             android:layout_marginStart="40dp"
             android:text="Gratis"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             android:layout_marginRight="5dp"/>
 
         <Button
@@ -61,6 +64,8 @@
             android:layout_weight="1"
             android:layout_marginEnd="40dp"
             android:layout_marginRight="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             android:text="De paga" />
 
          </LinearLayout>
@@ -94,6 +99,8 @@
                 android:layout_margin="5dp"
                 android:id="@+id/btn_hoy"
                 android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:text="HOY"/>
             <Button
                 android:layout_width="0dp"
@@ -102,6 +109,8 @@
                 android:layout_margin="5dp"
                 android:id="@+id/btn_semana"
                 android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:text="SEMANA"/>
             <Button
                 android:layout_width="0dp"
@@ -110,6 +119,8 @@
                 android:layout_height="60dp"
                 android:id="@+id/btn_mes"
                 android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
                 android:text="MES"/>
 
 

@@ -7,7 +7,7 @@
     android:layout_marginTop="100dp"
     android:layout_marginStart="16dp"
     android:id="@+id/nav_heder"
-    android:background="@color/white">
+    android:background="@color/componentes">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="60dp"
@@ -19,10 +19,5 @@
         android:id="@+id/tv_texto"
         android:textSize="20dp"
         android:text="Si eres organizador de eventos puedes registrarte en la opción registrar"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="16dp"
-        android:layout_marginTop="30dp"
-        android:background="@color/white"/>
 
 </LinearLayout>
