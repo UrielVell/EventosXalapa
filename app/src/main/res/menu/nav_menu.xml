@@ -15,8 +15,4 @@
         android:icon="@drawable/baseline_recommend_24"
         android:title="Favoritos"/>
 
-    <item android:id="@+id/nav_agregar_evento"
-
-        android:title="Agregar evento"/>
-
 </menu>

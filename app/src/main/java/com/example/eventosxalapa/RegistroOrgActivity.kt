@@ -1,5 +1,6 @@
 package com.example.eventosxalapa
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -29,6 +30,8 @@ class RegistroOrgActivity : AppCompatActivity() {
             if (validarCampos(organizacion,email,contrasena)){
                 promotor = inicializarPromotor(organizacion,email,contrasena)
                 Toast.makeText(this@RegistroOrgActivity,"Ahora puedes agendar Eventos",Toast.LENGTH_LONG).show()
+                val intent = Intent(this@RegistroOrgActivity, MainActivity2::class.java)
+                startActivity(intent)
             }else{
                 Toast.makeText(this@RegistroOrgActivity,"campos invalidos",Toast.LENGTH_LONG).show()
 

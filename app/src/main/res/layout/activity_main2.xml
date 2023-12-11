@@ -29,6 +29,13 @@
                 android:ems="10"
                 android:hint="Busqueda rapida"
                 android:inputType="text" />
+            <ImageButton
+                android:id="@+id/btnMicro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@android:drawable/ic_btn_speak_now" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -110,11 +117,11 @@
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
+        android:id="@+id/nav_view2"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/nav_menu"
+        app:menu="@menu/nav_menu2"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"/>
 
