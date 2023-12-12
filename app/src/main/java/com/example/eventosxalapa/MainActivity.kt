@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.eventosxalapa.Models.EventosProvider
 import com.example.eventosxalapa.Models.Promotor
 import com.example.eventosxalapa.databinding.ActivityMainBinding
+import com.example.eventosxalapa.util.Constantes
 import com.google.android.material.navigation.NavigationView
 import java.util.Locale
 
@@ -65,7 +66,7 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.nav_Regitrar -> {
                     val intent = Intent(this@MainActivity, RegistroOrgActivity::class.java)
-                    startActivity(intent)}
+                    startActivityForResult(intent, Constantes.REQUEST_CODE_REGISTRO)}
             }
             when(it.itemId){
                 R.id.nav_favorito -> Toast.makeText(applicationContext, "Mostrar eventos guardados", Toast.LENGTH_SHORT).show()
@@ -115,6 +116,15 @@ class MainActivity : AppCompatActivity() {
 
 
         cargarLista()
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == Constantes.REQUEST_CODE_REGISTRO && resultCode == RESULT_OK) {
+            // La validación en RegistroOrgActivity fue exitosa, cierra MainActivity
+            finish()
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

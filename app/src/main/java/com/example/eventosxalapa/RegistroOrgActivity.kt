@@ -31,7 +31,9 @@ class RegistroOrgActivity : AppCompatActivity() {
                 promotor = inicializarPromotor(organizacion,email,contrasena)
                 Toast.makeText(this@RegistroOrgActivity,"Bienvenido "+organizacion+ ": Ahora puedes agendar Eventos",Toast.LENGTH_LONG).show()
                 val intent = Intent(this@RegistroOrgActivity, MainActivity2::class.java)
+                setResult(RESULT_OK)
                 startActivity(intent)
+                finish()
             }else{
                 Toast.makeText(this@RegistroOrgActivity,"campos invalidos",Toast.LENGTH_LONG).show()
 
